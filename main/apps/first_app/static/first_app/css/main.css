@@ -1,8 +1,47 @@
-h1 {
-    color: blue;
-    font-size: 40px;
+.navbar {
+    margin-bottom: 2%;
 }
-p {
-    color: green;
-    font-weight: bold;
+.header {
+    color: lightgray;
+    font-size: 70px;
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+}
+.container-fluid {
+    background-color: black;
+}
+.img-fluid {
+    max-width: 30%;
+    height: auto;
+    margin: 1%;
+}
+.centered {
+    text-align: center;
+}
+.inline-b {
+    display: inline-block;
+    vertical-align: top;
+}
+.centered {
+    text-align: center;
+}
+.about-header {
+    color: lightgray;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.about-content {
+    color: lightgray;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.about-words {
+    max-width: 60%;
+}
+.bottom-space {
+    padding-bottom: 5%;
+}
+svg {
+    display: block;
+    margin: 0 auto;
 }
