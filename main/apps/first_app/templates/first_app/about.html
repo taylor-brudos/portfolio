@@ -8,6 +8,7 @@
     {% load static %}
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'first_app/css/main.css' %}">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
     <div class="container-fluid">
@@ -32,26 +33,52 @@
         <div class="bottom-space">
             <img class="img-fluid inline-b" src="{% static 'first_app/images/profilePic.jpg' %}" alt="Taylor profile pic"/>
             <div class="inline-b about-words">
-                <h1 class="about-header">
+                <h1 class="about-header inline-b why-head">
                     Why I Code
                 </h1>
-                <p class="about-content">
+                <!-- <img class="img-fluid inline-b" src="{% static 'first_app/images/tool-icon.png' %}" alt="tool icon" width="5%" height="25%"/> -->
+                <p class="about-content why">
                     Programming software is akin to spelunking (pictured left: that's me at Waitomo Caves in New Zealand). There's the thrill of descending deep into uncharted territories as you begin your expedition, you may trip or lose your way in the dark, and so long as you keep pushing forward you will make it to the exhilarating light at the end of your journey.
                 </p>
-                <h1 class="about-header">
+                <h1 class="about-header what-head">
                     What I Code
                 </h1>
-                <p class="about-content">
-                    My first experience with "coding" was creating complex Excel formulas at my job as an accountant. After working in finance for a while, I came to realize that there is a huge opportunity to incorporate coding with the finance world in order to automate mundane and manual processes.  That realization catipulted me into a coding bootcamp where I became a full-stack developer.  Now, I create full-stack web applications and my focus is on using Python to automate things at work, saving my company much time and money.  
+                <p class="about-content what">
+                    My first experience with "coding" was creating complex Excel formulas at my job as an accountant. After working in finance for a while, I came to realize that there is a huge opportunity to incorporate coding with the finance world in order to automate mundane and manual processes.  That realization catipulted me into a coding bootcamp where I became a full-stack developer.   
                 </p>
-                <h1 class="about-header">
+                <h1 class="about-header how-head">
                     How I Code
                 </h1>
-                <p class="about-content">
+                <p class="about-content how">
                     At the core, I am a Full-Stack Python Developer: I build my apps using Django and incorporate other libraries including openpyxl, python-docx, and d3js. I also enjoy practicing my programming skills by doing algorithms in Python on the Leetcode and HackerRank platforms. I am always looking for new, innovative tools to incorporate into my projects.
                 </p>
             </div>
         </div>
     </div>
+    <!-- <script>
+        $(document).ready(function() {
+            $(".why").hide();
+            $(".what").hide();
+            $(".how").hide();
+        });
+
+        $(".why-head").click(
+            function() {
+                $(".why").fadeToggle(1000);
+            }
+        );
+
+        $(".what-head").click(
+            function() {
+                $(".what").fadeToggle(1000);
+            }
+        );
+
+        $(".how-head").click(
+            function() {
+                $(".how").fadeToggle(1000);
+            }
+        );
+    </script> -->
 </body>
 </html>

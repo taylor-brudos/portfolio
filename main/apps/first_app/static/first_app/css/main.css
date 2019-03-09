@@ -10,6 +10,10 @@
 .container-fluid {
     background-color: black;
 }
+.sml-icon {
+    width: 20%;
+    height: 20%;
+}
 .img-fluid {
     max-width: 30%;
     height: auto;
