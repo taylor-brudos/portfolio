@@ -8,7 +8,10 @@
     {% load static %}
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'first_app/css/main.css' %}">
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-1.10.2.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container-fluid">
@@ -18,15 +21,24 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="/">Home</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="/about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% static 'first_app/filez/TaylorBrudos-Resume.pdf' %}">Resume</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Projects
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="http://www.yougive.life">YouGive</a>
+                        <a class="dropdown-item" href="http://www.equipship.io">Equipship</a>
+                    </div>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -44,13 +56,13 @@
                     What I Code
                 </h1>
                 <p class="about-content what">
-                    My first experience with "coding" was creating complex Excel formulas at my job as an accountant. After working in finance for a while, I came to realize that there is a huge opportunity to incorporate coding with the finance world in order to automate mundane and manual processes.  That realization catipulted me into a coding bootcamp where I became a full-stack developer.   
+                    My first experience with "coding" was creating complex Excel formulas at my job as an accountant. After working in finance for a while, I came to realize that there is a huge opportunity to incorporate coding with the finance world in order to automate mundane and manual processes.  That realization catipulted me into a coding bootcamp where I became a Full-Stack Developer.   
                 </p>
                 <h1 class="about-header how-head">
                     How I Code
                 </h1>
                 <p class="about-content how">
-                    At the core, I am a Full-Stack Python Developer: I build my apps using Django and incorporate other libraries including openpyxl, python-docx, and d3js. I also enjoy practicing my programming skills by doing algorithms in Python on the Leetcode and HackerRank platforms. I am always looking for new, innovative tools to incorporate into my projects.
+                    At the core, I am a Full-Stack Developer. I build my apps using Python, JavaScript, and Java and incorporate libraries including openpyxl, python-docx, Ajax, jQuery, D3.js, and CanvasJS. I am always looking for new, innovative tools to incorporate into my projects.
                 </p>
             </div>
         </div>
